@@ -25,7 +25,7 @@ variable "os_reference_code" {
 
 # This will create a new SSH key that will show up under the \
 # Devices>Manage>SSH Keys in the SoftLayer console.
-resource "ibm_compute_ssh_key" "orpheus_public_key" {
+resource "ibm_compute_ssh_key" "orpheus_public_key_jordax" {
   label      = "Orpheus Public Key jordax"
   public_key = "${var.public_ssh_key}"
 }
